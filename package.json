@@ -1,30 +1,55 @@
 {
-  "name": "single-spa-portal-example-react",
-  "version": "1.0.0",
-  "description": "React App that will be bundled into a library to be loaded on demand by a simpleSPA Portal App",
+  "name": "sample-vue",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "serve": "webpack-dev-server --port 8080",
-    "build": "webpack -p --progress"
-  },
-  "keywords": [],
-  "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/preset-react": "^7.7.0",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.2.0",
-    "dotenv": "^8.2.0",
-    "style-loader": "^1.0.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "serve": "vue-cli-service serve --port 8081",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.7.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
-    "react-bootstrap": "^1.0.0-beta.15",
-    "react-redux": "^7.1.3",
-    "react-router-dom": "^5.1.2",
-    "single-spa-react": "^2.10.4"
-  }
+    "bootstrap-vue": "^2.1.0",
+    "core-js": "^3.3.2",
+    "single-spa-vue": "^1.5.4",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "sass": "^1.23.6",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-single-spa": "^1.0.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
