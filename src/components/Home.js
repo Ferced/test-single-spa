@@ -42,7 +42,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="react-app-parcel p-3">
-        <h1 className="h1-react">Aguante el paco (perfume), React Parcel</h1>
+        <h1 className="h1-react">Aguante messi, React Parcel</h1>
         <div className="mt-2">
           <p>[{this.state.dbList.toString()}]</p>
         </div>

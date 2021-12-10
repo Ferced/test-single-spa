@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React App that will be bundled into a library to be loaded on demand by a simpleSPA Portal App",
   "scripts": {
-    "serve": "webpack-dev-server --port 9991",
+    "serve": "webpack-dev-server --port 8080",
     "build": "webpack -p --progress"
   },
   "keywords": [],
